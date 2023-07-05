@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jquery atrributes</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function(){
+            $('#btn1').click(function(){
+                var attrValues="";
+                attrValues +="Href:" +$("#home").attr("href")+"\n";
+                attrValues +="Title:" +$("#home").attr("title")+"\n";
+                attrValues +="Class:" +$("#home").attr("class");
+                alert(attrValues);
+            });
+            $('#btn2').click(function(){
+                var attrValues="";
+                attrValues +="Author Name:" +$("#div1").data("author-name")+"\n";
+                attrValues +="Year:" +$("#div1").data("year")+"\n";
+                alert(attrValues);
+        });
+    });
+    </script>
+        </head>
+        <body>
+            <a id="home" href="home.html" class="link" title="Click here goto home page">
+                Home
+            </a>
+            <br/><br/>
+            <button id="btn1">Get Stander attribute value</button>
+            <br/><br/>
+            <div id="div1" data-author-name="Kimti-Prajapati" data-year="2022">
+                This is the content part of div tag
+            </div>
+            <br/>
+            <button id="btn2">Get customer attribute value</button>
+        </body>
+
+</html>

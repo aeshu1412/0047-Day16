@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jquery basic</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script type="text/javascript" language="javascript">
+            $(document).ready(function(){
+                $(".lbmessage").text("Welcome to Jquery");
+                $("h1").css("background-color","pink");
+                $("#btnGetLength").click(function(){
+                    stringLength();
+                });
+            });
+            </script>
+            <script type="text/javascript" src="myjavascript.js"></script>
+            <style>
+                .lbmessage{
+                    color:#b200ff;
+                    font-size:24px;;
+                }
+
+            </style>
+            </head>
+            <body>
+                <span class="lbmessage">1</span>
+                <h1>This is a first paragraph</h1>
+                <input type="text" id="firstname"/><br/><br/>
+                <button id="btnGetLength">Get length of name</button><br/><br/>
+            </body>
+
+</html>
